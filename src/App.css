@@ -2,7 +2,12 @@
   text-align: center;
 }
 
-
+.wrap {
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+}
 
 .App-header {
   background-color: #282c34;
@@ -11,7 +16,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* font-size: calc(10px + 2vmin); */
   color: white;
 }
 
@@ -26,5 +31,28 @@
 
 .nav {
   height: 200px;
-  background-color: aquamarine;
+  background-color: rgb(231, 238, 178);
+  color: grey;
+}
+
+.itenarary {
+  background-color: rgb(116, 129, 19);;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+ gap: 5px;
+  background-color: blue;
+  padding: 10px;
+  /* grid-template-rows: repeat(5) */
+}
+
+.grid > div {
+  height: 50px;
+  background-color: red;
+}
+
+.search {
+  background-color: aqua;
 }
