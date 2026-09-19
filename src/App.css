@@ -1,13 +1,45 @@
 .App {
   text-align: center;
+  font-family: 'Playfair Display', serif;
 }
 
-.wrap {
-  padding: 50px;
+.nav {
+  background-color: #075e14 !important;
   display: flex;
-  flex-direction: row;
-  gap: 200px;
+  width: 100%;
+  /* justify-content: space-around; */
 }
+
+.nav-links {
+  display: flex;
+  margin-left: auto;
+}
+
+.login {
+   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  margin-top: 0px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: rgb(116, 129, 19);
+  height: auto;
+  z-index: 10;
+
+}
+
+/* .trip-container {
+  background-color: aqua;
+} */
+
+/* .wrap {
+   display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 
 .App-header {
   background-color: #282c34;
@@ -16,7 +48,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* font-size: calc(10px + 2vmin); */
+  
   color: white;
 }
 
@@ -25,34 +57,201 @@
 }
 
 #travel-image {
-  height: 200px;
-  width: 200px;
+  height: 400px;
+  width: 400px;
 }
 
-.nav {
-  height: 200px;
-  background-color: rgb(231, 238, 178);
-  color: grey;
-}
 
-.itenarary {
-  background-color: rgb(116, 129, 19);;
+
+.itinerary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+  
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(5,1fr);
- gap: 5px;
-  background-color: blue;
-  padding: 10px;
-  /* grid-template-rows: repeat(5) */
+  grid-template-columns: repeat(5,250px);
+  gap: 55px;
+  width: 100%;
+  
+  background-color: rgb(116, 129, 19);
+  padding: 30px;
+  
 }
 
-.grid > div {
-  height: 50px;
-  background-color: red;
-}
+
 
 .search {
-  background-color: aqua;
+  background-color: rgb(116, 129, 19);
+  /* background-color:  blanchedalmond; */
+  /* background-color: aqua; */
 }
+
+
+
+.footer {
+  height: 200px;
+  background-color: rgb(116, 129, 19);
+  
+}
+
+label {
+  font-weight: bold;
+}
+
+.travel-planner {
+  margin: 0 auto;
+  width: 50%;
+  border-radius: 2px;
+  border-color: rgb(116, 129, 19);
+  /* border-color: rgb(245, 201, 155); */
+  border-style: solid;
+  padding: 20px;
+
+}
+
+.my-trips {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(116, 129, 19);
+  padding: 7px;
+  /* margin-top: 20px; */
+  /* margin: 10px; */
+  width: 100%;
+  height: auto;
+  /* gap: 5px; */
+
+}
+
+.trip-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 300px;
+  background-color: white;
+  border-radius: 2px;
+  border-color: rgb(116, 129, 19);
+  
+  border-style: solid;
+  padding: 10px;
+}
+
+.trip-form {
+  
+   padding: 5px; 
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-around;
+  width: 100%;
+  background-color: rgb(116, 129, 19);
+ 
+  height: auto;
+
+   border-radius: 2px;
+   border-color: rgb(116, 129, 19);
+  
+  border-style: solid;
+  
+  background-color: white;
+}
+
+
+
+.trip-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 5px;
+}
+
+.iten-card {
+  width: 300px;
+  min-height: 300px;
+  background-color: white;
+}
+
+.trip-details {
+  display: flex;
+  margin-left: 0;
+  margin-right: 0;
+   background-color: white;
+  border-radius: 2px;
+  border-color: rgb(116, 129, 19);
+  /* min-height: 400px; */
+ height: auto;
+  /* border-style: solid; */
+/* padding: 5px;  */
+  width: 100%;
+  margin: 0 auto;
+}
+
+.trip-image {
+  height: 100px;
+  width: 100px;
+}
+
+button {
+  align-self: center;
+  height: 50px;
+  width: 50px;
+}
+
+.signup {
+   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+   position: absolute;
+   margin-top: 0px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+ background-color: rgb(116, 129, 19);
+  /* background-color: rgb(249, 250, 244); */
+  height: auto;
+  z-index: 10;
+}
+
+.link {
+  color: white;
+  padding: 20px;
+  /* justify-content: flex-end; */
+}
+
+.wrap {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.button {
+  height: 30px;
+}
+
+.link-btn {
+  text-decoration: underline;
+  font-weight: bold;
+  background: none;
+  color: white;
+}
+
+.trip-wrap {
+  display: flex;
+  flex-direction: column;
+  /* gap: 15px; */
+  width: 50%;
+
+}
+
+
+
